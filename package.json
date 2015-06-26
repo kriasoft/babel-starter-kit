@@ -1,6 +1,6 @@
 {
   "name": "generator-javascript",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "JavaScript library project (ES6+, Babel, Browserify, Mocha/Chai, Docs)",
   "license": "MIT",
   "main": "app/index.js",
