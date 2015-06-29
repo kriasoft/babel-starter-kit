@@ -1,4 +1,6 @@
-# generator-javascript [![Build Status](https://secure.travis-ci.org/kriasoft/babel-starter-kit.png?branch=yeoman-generator)](https://travis-ci.org/kriasoft/babel-starter-kit)
+# Yeoman generator for JavaScript libraries
+ 
+[![Build Status](http://img.shields.io/travis/kriasoft/babel-starter-kit/yeoman-generator.svg?style=flat-square)](https://travis-ci.org/kriasoft/babel-starter-kit)
 
 > [Yeoman](http://yeoman.io) generator
 

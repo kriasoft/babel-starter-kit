@@ -1,4 +1,4 @@
-[submodule "app/templates"]
-	path = app/templates
+[submodule "babel-starter-kit"]
+	path = babel-starter-kit
 	url = https://github.com/kriasoft/babel-starter-kit.git
 	branch = yeoman

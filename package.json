@@ -17,7 +17,8 @@
     "test": "mocha"
   },
   "files": [
-    "app"
+    "app",
+    "babel-starter-kit"
   ],
   "keywords": [
     "yeoman-generator",

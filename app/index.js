@@ -1,5 +1,6 @@
 'use strict';
 
+var path = require('path');
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
@@ -8,6 +9,7 @@ var glob = require('glob');
 module.exports = yeoman.generators.Base.extend({
 
   prompting: function () {
+    this.sourceRoot(path.join(this.sourceRoot(), '../../babel-starter-kit'));
     this.log(yosay(
       'Welcome to the primo ' + chalk.green('JavaScript library') + ' generator!'
     ));
