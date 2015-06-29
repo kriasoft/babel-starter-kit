@@ -1,13 +1,10 @@
 {
-  "name": "babel-starter-kit",
+  "name": "<%= name %>",
   "version": "0.0.0",
-  "description": "A project template for authoring and publishing JavaScript libraries",
-  "repository": "https://github.com/kriasoft/babel-starter-kit",
-  "author": "Kriasoft",
-  "contributors": [
-    "Konstantin Tarkus <hello@tarkus.me>"
-  ],
-  "license": "MIT",
+  "description": "<%= description %>",
+  "repository": "<%= repository %>",
+  "author": "<%= author %>",
+  "license": "<%= license %>",
   "main": "lib/index.js",
   "dependencies": {},
   "devDependencies": {
