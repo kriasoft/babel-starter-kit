@@ -1,8 +1,9 @@
 # Yeoman generator for JavaScript libraries
- 
-[![Build Status](http://img.shields.io/travis/kriasoft/babel-starter-kit/yeoman-generator.svg?style=flat-square)](https://travis-ci.org/kriasoft/babel-starter-kit)
 
-> [Yeoman](http://yeoman.io) generator
+[![NPM version](http://img.shields.io/npm/v/generator-javascript.svg?style=flat-square)](http://npmjs.org/generator-javascript)
+[![NPM downloads](http://img.shields.io/npm/dm/generator-javascript.svg?style=flat-square)](http://npmjs.org/generator-javascript)
+[![Build Status](http://img.shields.io/travis/kriasoft/babel-starter-kit/yeoman-generator.svg?style=flat-square)](https://travis-ci.org/kriasoft/babel-starter-kit)
+[![Dependency Status](http://img.shields.io/david/kriasoft/babel-starter-kit.svg?branch=yeoman-generator&style=flat-square)](https://david-dm.org/kriasoft/babel-starter-kit)
 
 ## Getting Started
 
@@ -44,4 +45,4 @@ If you'd like to get to know Yeoman better and meet some of his friends, [Grunt]
 
 ## License
 
-Copyright © Konstantin Tarkus ([@koistya](https://twitter.com)) &nbsp;|&nbsp; The MIT License
+Copyright © Konstantin Tarkus ([@koistya](https://twitter.com/koistya)) &nbsp;|&nbsp; The MIT License
