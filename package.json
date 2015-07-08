@@ -1,7 +1,7 @@
 {
   "name": "generator-javascript",
-  "version": "0.0.6",
-  "description": "JavaScript library project (ES6+, Babel, Browserify, Mocha/Chai, Docs)",
+  "version": "0.0.7",
+  "description": "A project template for authoring and publishing JavaScript libraries",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "https://github.com/kriasoft/babel-starter-kit/tree/yeoman-generator",
