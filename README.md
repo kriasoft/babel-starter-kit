@@ -4,6 +4,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/generator-javascript.svg?style=flat-square)](http://npmjs.org/generator-javascript)
 [![Build Status](http://img.shields.io/travis/kriasoft/babel-starter-kit/yeoman-generator.svg?style=flat-square)](https://travis-ci.org/kriasoft/babel-starter-kit)
 [![Dependency Status](http://img.shields.io/david/kriasoft/babel-starter-kit.svg?branch=yeoman-generator&style=flat-square)](https://david-dm.org/kriasoft/babel-starter-kit)
+[![Chat](http://img.shields.io/badge/chat_room-%23babel--starter--kit-blue.svg?style=flat-square)](https://gitter.im/kriasoft/babel-starter-kit)
 
 ## Getting Started
 
@@ -43,6 +44,11 @@ Yeoman has a heart of gold. He's a person with feelings and opinions, but he's v
 
 If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
 
+## Support
+
+ * [#babel-starter-kit](https://gitter.im/kriasoft/babel-starter-kit) on Gitter
+ * [@koistya](https://www.codementor.io/koistya) on Codementor
+
 ## License
 
-Copyright © Konstantin Tarkus ([@koistya](https://twitter.com/koistya)) &nbsp;|&nbsp; The MIT License
+The MIT License © Konstantin Tarkus ([@koistya](https://twitter.com/koistya))
