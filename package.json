@@ -1,6 +1,6 @@
 {
   "name": "generator-javascript",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A project template for authoring and publishing JavaScript libraries",
   "license": "MIT",
   "main": "app/index.js",
