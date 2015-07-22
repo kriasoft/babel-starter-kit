@@ -4,7 +4,6 @@
  */
 
 import 'babel/polyfill';
-import moment from 'moment';
 import onStats from './onStats';
 
 const run = async () => {
@@ -12,8 +11,6 @@ const run = async () => {
     console.log('Welcome to Babel Starter Kit!');
     if (document.querySelector('.stats')) {
       onStats(stats => {
-        document.querySelector('.stats-created span').innerText = moment(stats.createdAt).fromNow();
-        document.querySelector('.stats-updated span').innerText = moment(stats.updatedAt).fromNow();
         document.querySelector('.stats-forks span').innerText = stats.forks;
         document.querySelector('.stats-stars span').innerText = stats.watchers;
         document.querySelector('.stats-subscribers span').innerText = stats.subscribers;
