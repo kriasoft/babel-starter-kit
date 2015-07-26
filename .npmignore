@@ -8,6 +8,5 @@
 .travis.xml
 build
 docs
-src
 test
 tools
