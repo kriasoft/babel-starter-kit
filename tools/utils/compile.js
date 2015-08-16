@@ -51,18 +51,15 @@ const md = async (source, data) => {
   return layout(Object.assign(content.attributes, { body }));
 };
 
-const css = (source, options) => new Promise((resolve, reject) => {
+const css = async (source, options) => {
   options = options || {};
-  try {
-    postcss.process(source, {
-      from: 'docs/css/main.css',
-      to: 'docs/css/main.min.css',
-      map: !!options.map
-    }).then(result => resolve(result.css)).catch(err => reject(err));
-  } catch (err) {
-    reject(err);
-  }
-});
+  const result = await postcss.process(source, {
+    from: 'docs/css/main.css',
+    to: 'docs/css/main.min.css',
+    map: !!options.map
+  });
+  return result.css;
+};
 
 const js = async (options) => new Promise((resolve, reject) => {
   options = options || {};
