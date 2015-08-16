@@ -42,6 +42,8 @@ describe('javascript:app', function () {
         '.babelrc',
         '.editorconfig',
         '.eslintrc',
+        '.gitattributes',
+        '.gitignore',
         'package.json'
       ]);
     });

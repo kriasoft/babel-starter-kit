@@ -106,6 +106,8 @@ module.exports = yeoman.generators.Base.extend({
         var dest = file;
         if (file === 'npmignore') {
           dest = '.' + file;
+        } else if (file === '.npmignore') {
+          dest = '.gitignore';
         }
         if (file === 'package.json') {
           this.fs.copyTpl(
@@ -118,7 +120,7 @@ module.exports = yeoman.generators.Base.extend({
               author: this.props.author,
               license: 'MIT'
             }
-          )
+          );
         } else {
           this.fs.copy(
             this.templatePath(file),
