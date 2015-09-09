@@ -5,8 +5,8 @@
 
 import gaze from 'gaze';
 import browserSync from 'browser-sync';
-import fs from './utils/fs';
-import compile from './utils/compile';
+import fs from './lib/fs';
+import compile from './lib/compile';
 import { rootDir } from './config';
 
 browserSync({

@@ -4,18 +4,16 @@
  */
 
 import del from 'del';
-import fs from './utils/fs';
-import compile from './utils/compile';
+import fs from './lib/fs';
+import compile from './lib/compile';
 import { rootDir } from './config';
 
 // Clean output directories
-const cleanup = async () => new Promise((resolve) => {
-  del(['build/*', 'lib/*', '!build/.git'], { dot: true }, async () => {
-    await fs.makeDir('build');
-    await fs.makeDir('lib');
-    resolve();
-  });
-});
+const cleanup = async () => {
+  await del(['build/*', 'lib/*', '!build/.git'], { dot: true });
+  await fs.makeDir('build');
+  await fs.makeDir('lib');
+};
 
 // Compile the source code into a distributable format
 const src = async () => {
@@ -75,7 +73,7 @@ const javascript = async () => {
 };
 
 // Run all build steps in sequence
-(async () => {
+export default async () => {
   try {
     console.log('clean');
     await cleanup();
@@ -92,4 +90,4 @@ const javascript = async () => {
   } catch (err) {
     console.error(err.stack);
   }
-})();
+};
