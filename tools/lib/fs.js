@@ -12,29 +12,21 @@ const exists = filename => new Promise(resolve => {
 });
 
 const isDirectory = filename => new Promise((resolve, reject) => {
-  fs.stat(filename, (err, stat) => {
-    if (err) {
-      reject(err);
-    } else {
-      resolve(stat && stat.isDirectory());
-    }
-  });
+  fs.stat(filename, (err, stat) =>
+    err ? reject(err) : resolve(stat && stat.isDirectory())
+  );
 });
 
 const readDir = directory => new Promise((resolve, reject) => {
-  fs.readdir(directory, (err, files) => {
-    if (err) {
-      reject(err);
-    } else {
-      resolve(files);
-    }
-  });
+  fs.readdir(directory, (err, files) =>
+    err ? reject(err) : resolve(files)
+  );
 });
 
 const getFiles = async (directory) => {
   let files = [];
   const join = (dir, filename) => path.join(dir, filename);
-  for (let file of await readDir(directory)) {
+  for (const file of await readDir(directory)) {
     const fullPath = path.resolve(directory, file);
     if (await isDirectory(fullPath)) {
       files = files.concat((await getFiles(fullPath)).map(join.bind(null, file)));
@@ -46,33 +38,19 @@ const getFiles = async (directory) => {
 };
 
 const readFile = filename => new Promise((resolve, reject) => {
-  fs.readFile(filename, 'utf8', (err, contents) => {
-    if (err) {
-      reject(err);
-    } else {
-      resolve(contents);
-    }
-  });
+  fs.readFile(filename, 'utf8', (err, contents) =>
+    err ? reject(err) : resolve(contents)
+  );
 });
 
 const writeFile = (filename, contents) => new Promise((resolve, reject) => {
-  fs.writeFile(filename, contents, 'utf8', err => {
-    if (err) {
-      reject(err);
-    } else {
-      resolve();
-    }
-  });
+  fs.writeFile(filename, contents, 'utf8', err =>
+    err ? reject(err) : resolve()
+  );
 });
 
 const makeDir = name => new Promise((resolve, reject) => {
-  mkdirp(name, err => {
-    if (err) {
-      reject(err);
-    } else {
-      resolve();
-    }
-  });
+  mkdirp(name, err => err ? reject(err) : resolve());
 });
 
 const copyFile = (src, dest) => new Promise((resolve, reject) => {
@@ -90,15 +68,15 @@ const copyFile = (src, dest) => new Promise((resolve, reject) => {
 
   makeDir(path.dirname(dest)).then(() => {
     const rd = fs.createReadStream(src);
-    rd.on('error', function(err) {
+    rd.on('error', (err) => {
       done(err);
     });
 
     const wr = fs.createWriteStream(dest);
-    wr.on('error', function(err) {
+    wr.on('error', (err) => {
       done(err);
     });
-    wr.on('close', function() {
+    wr.on('close', () => {
       done();
     });
     rd.pipe(wr);

@@ -5,8 +5,8 @@
 
 import gaze from 'gaze';
 import browserSync from 'browser-sync';
-import fs from './utils/fs';
-import compile from './utils/compile';
+import fs from './lib/fs';
+import compile from './lib/compile';
 import { rootDir } from './config';
 
 browserSync({
@@ -20,17 +20,18 @@ browserSync({
       }
 
       if (!req.url.startsWith(rootDir)) {
-        let location = rootDir.substr(0, rootDir.length - 1) + req.url;
+        const location = rootDir.substr(0, rootDir.length - 1) + req.url;
         console.log(`Redirect from ${req.url} to ${location}`);
         res.writeHead(302, { Location: location });
         return res.end();
       }
 
-      let contents, output;
+      let contents;
+      let output;
 
       try {
         req.url = req.url.substr(rootDir.length - 1);
-        let pathname = req.url.indexOf('?') === -1 ?
+        const pathname = req.url.indexOf('?') === -1 ?
           req.url : req.url.substr(0, req.url.indexOf('?'));
 
         if (pathname === '/css/main.min.css') {
@@ -43,8 +44,8 @@ browserSync({
           res.setHeader('Content-Type', 'application/javascript');
           res.end(output);
         } else {
-          let filename = pathname === '/' ? './docs/index.md' : './docs' + pathname + '.md';
-          let exists = await fs.exists(filename);
+          const filename = pathname === '/' ? './docs/index.md' : './docs' + pathname + '.md';
+          const exists = await fs.exists(filename);
           if (!exists) {
             return next();
           }
@@ -52,16 +53,16 @@ browserSync({
           output = await compile.md(contents, {
             root: rootDir,
             url: req.url,
-            fileName: filename.substr(1)
+            fileName: filename.substr(1),
           });
           res.end(output);
         }
       } catch (err) {
         next(err);
       }
-    }]
+    }],
   },
-  port: process.env.PORT || 3000
+  port: process.env.PORT || 3000,
 });
 
 // Watch for modifications
