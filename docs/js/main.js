@@ -8,7 +8,7 @@ import onStats from './onStats';
 
 const run = async () => {
   try {
-    console.log('Welcome to Babel Starter Kit!');
+    console.log('Welcome to Babel Starter Kit!'); // eslint-disable-line no-console
     if (document.querySelector('.stats')) {
       onStats(stats => {
         document.querySelector('.stats-forks span').innerText = stats.forks;
@@ -18,7 +18,7 @@ const run = async () => {
       });
     }
   } catch (err) {
-    console.log(err);
+    console.log(err); // eslint-disable-line no-console
   }
 };
 

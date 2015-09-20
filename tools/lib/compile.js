@@ -12,35 +12,35 @@ import hljs from 'highlight.js';
 import fs from './fs';
 
 const postcss = require('postcss')([
+  require('postcss-import')(),
   require('postcss-nested')(),
-  require('cssnext')(),
-  require('autoprefixer-core')([
+  require('postcss-cssnext')({autoprefixer: [
     'Android 2.3',
     'Android >= 4',
-    'Chrome >= 20',
-    'Firefox >= 24',
-    'Explorer >= 8',
-    'iOS >= 6',
+    'Chrome >= 35',
+    'Firefox >= 31',
+    'Explorer >= 9',
+    'iOS >= 7',
     'Opera >= 12',
-    'Safari >= 6'
-  ]),
-  require('cssnano')()
+    'Safari >= 7.1',
+  ]}),
+  require('cssnano')(),
 ]);
 
 const markdown = new Markdown({
-  highlight: function (str, lang) {
+  highlight: (str, lang) => {
     if (lang && hljs.getLanguage(lang)) {
       try {
         return hljs.highlight(lang, str).value;
-      } catch (_) {}
+      } catch (_) {} // eslint-disable-line no-empty
     }
 
     try {
       return hljs.highlightAuto(str).value;
-    } catch (_) {}
+    } catch (_) {} // eslint-disable-line no-empty
 
     return ''; // use external default escaping
-  }
+  },
 });
 
 const md = async (source, data) => {
@@ -52,20 +52,20 @@ const md = async (source, data) => {
 };
 
 const css = async (source, options) => {
-  options = options || {};
+  options = options || {}; // eslint-disable-line no-param-reassign
   const result = await postcss.process(source, {
     from: 'docs/css/main.css',
     to: 'docs/css/main.min.css',
-    map: !!options.map
+    map: !!options.map,
   });
   return result.css;
 };
 
 const js = async (options) => new Promise((resolve, reject) => {
-  options = options || {};
+  options = options || {}; // eslint-disable-line no-param-reassign
   browserify('docs/js/main.js', {
     debug: !!options.debug,
-    transform: [babelify]
+    transform: [babelify],
   }).bundle((err, buffer) =>
     err ? reject(err) : resolve(buffer.toString('utf8'))
   );

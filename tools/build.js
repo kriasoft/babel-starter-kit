@@ -20,9 +20,9 @@ const src = async () => {
   const babel = require('babel');
   const files = await fs.getFiles('src');
 
-  for (let file of files) {
-    let source = await fs.readFile('src/' + file);
-    let result = babel.transform(source);
+  for (const file of files) {
+    const source = await fs.readFile('src/' + file);
+    const result = babel.transform(source);
     await fs.writeFile('lib/' + file, result.code);
     await fs.writeFile('lib/' + file.substr(0, file.length - 3) + '.babel.js', source);
   }
@@ -31,7 +31,7 @@ const src = async () => {
 // Copy static files into the build folder
 const assets = async () => {
   const files = await fs.getFiles('docs');
-  for (let file of files) {
+  for (const file of files) {
     if (file.endsWith('.svg') || file.endsWith('.ico')) {
       await fs.copyFile('docs/' + file, 'build/' + file);
     }
@@ -48,17 +48,18 @@ const css = async () => {
 
 // Compile HTML pages for the documentation site
 const html = async () => {
-  let source, output;
+  let source;
+  let output;
   const toUrl = filename => filename === 'index.md' ? '/' :
     filename.substr(0, filename.length - (filename.endsWith('index.md') ? 8 : 3));
   const files = await fs.getFiles('docs');
-  for (let file of files) {
+  for (const file of files) {
     if (file.endsWith('.md')) {
       source = await fs.readFile('docs/' + file);
       output = await compile.md(source, {
         root: rootDir,
         url: toUrl(file),
-        fileName: '/docs/' + file
+        fileName: '/docs/' + file,
       });
       await fs.writeFile('build/' + file.substr(0, file.length - 3) + '.html', output);
     }

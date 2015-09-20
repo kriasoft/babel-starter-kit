@@ -40,7 +40,7 @@ const onStats = (() => {
       callback(value);
     }
     if (!value || (new Date() - new Date(timestamp)) > 300000 /* 5 min */) {
-      let response = await load('https://api.github.com/repos/kriasoft/babel-starter-kit');
+      const response = await load('https://api.github.com/repos/kriasoft/babel-starter-kit');
       if (response.meta.status === 200) {
         const data = {
           value: {
@@ -50,15 +50,14 @@ const onStats = (() => {
             forks: response.data.forks,
             watchers: response.data.watchers,
             subscribers: response.data.subscribers_count,
-            openIssues: response.data.open_issues
+            openIssues: response.data.open_issues,
           },
-          timestamp: new Date()
+          timestamp: new Date(),
         };
         window.localStorage.setItem(key, JSON.stringify(data));
         callback(data.value);
       } else {
-        console.log(response);
-        throw new Error('Request failed.');
+        throw new Error('Request failed. ' + response);
       }
     }
   };

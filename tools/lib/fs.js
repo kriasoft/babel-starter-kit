@@ -26,7 +26,7 @@ const readDir = directory => new Promise((resolve, reject) => {
 const getFiles = async (directory) => {
   let files = [];
   const join = (dir, filename) => path.join(dir, filename);
-  for (let file of await readDir(directory)) {
+  for (const file of await readDir(directory)) {
     const fullPath = path.resolve(directory, file);
     if (await isDirectory(fullPath)) {
       files = files.concat((await getFiles(fullPath)).map(join.bind(null, file)));
@@ -68,15 +68,15 @@ const copyFile = (src, dest) => new Promise((resolve, reject) => {
 
   makeDir(path.dirname(dest)).then(() => {
     const rd = fs.createReadStream(src);
-    rd.on('error', function(err) {
+    rd.on('error', (err) => {
       done(err);
     });
 
     const wr = fs.createWriteStream(dest);
-    wr.on('error', function(err) {
+    wr.on('error', (err) => {
       done(err);
     });
-    wr.on('close', function() {
+    wr.on('close', () => {
       done();
     });
     rd.pipe(wr);
