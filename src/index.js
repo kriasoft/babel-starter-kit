@@ -3,6 +3,4 @@
  * Copyright (c) Konstantin Tarkus <hello@tarkus.me> | The MIT License
  */
 
-import Greeting from './Greeting.js';
-
-export default { Greeting };
+export Greeting from './Greeting.js';

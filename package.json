@@ -2,48 +2,53 @@
   "name": "babel-starter-kit",
   "version": "0.0.0",
   "description": "A project template for authoring and publishing JavaScript libraries",
-  "homepage": "http://www.kriasoft.com/babel-starter-kit",
+  "homepage": "https://www.kriasoft.com/babel-starter-kit/",
   "repository": "kriasoft/babel-starter-kit",
-  "author": "Kriasoft <support@kriasoft.com> (http://www.kriasoft.com)",
+  "author": "Kriasoft <hello@kriasoft.com> (https://www.kriasoft.com)",
   "contributors": [
     "Konstantin Tarkus <hello@tarkus.me>"
   ],
   "license": "MIT",
+  "keywords": [],
   "main": "lib/index.js",
-  "dependencies": {},
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb/base"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.6.1"
+  },
   "devDependencies": {
-    "autoprefixer": "^6.0.3",
-    "babel": "^5.8.23",
-    "babel-eslint": "^4.1.3",
-    "babelify": "^6.3.0",
-    "browser-sync": "^2.9.3",
-    "browserify": "^11.1.0",
-    "chai": "^3.2.0",
-    "cssnano": "^3.0.3",
-    "del": "^2.0.2",
-    "eslint": "^1.5.0",
-    "eslint-config-airbnb": "0.0.8",
-    "eslint-plugin-react": "^3.4.2",
-    "front-matter": "^1.0.0",
-    "gaze": "^0.5.1",
-    "highlight.js": "^8.8.0",
-    "lodash.template": "^3.6.2",
-    "markdown-it": "^4.4.0",
-    "mkdirp": "^0.5.1",
-    "mocha": "^2.3.2",
-    "moment": "^2.10.6",
-    "normalize.css": "^3.0.3",
-    "postcss": "^5.0.5",
-    "postcss-cssnext": "^2.1.0",
-    "postcss-import": "^7.0.0",
-    "postcss-nested": "^1.0.0",
-    "sinon": "^1.16.1"
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.7.4",
+    "babel-eslint": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.6.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.7.2",
+    "chai": "^3.5.0",
+    "eslint": "^2.5.3",
+    "eslint-config-airbnb": "6.2.0",
+    "eslint-plugin-react": "^4.2.3",
+    "mocha": "^2.4.5",
+    "rimraf": "^2.5.2",
+    "sinon": "^2.0.0-pre"
   },
   "scripts": {
-    "lint": "eslint src docs/js tools",
-    "test": "mocha test --compilers js:babel/register",
-    "build": "babel-node --eval \"require('./tools/build')().catch(err => console.error(err.stack))\"",
-    "start": "babel-node tools/start",
-    "publish": "build && cd build && git init && git add --all . && git commit --amend --no-edit && git push origin gh-pages -f"
+    "lint": "eslint src test",
+    "test": "mocha test --compilers js:babel-register",
+    "build": "rimraf lib && babel src --out-dir lib",
+    "publish": "rimraf lib && babel src --out-dir lib",
+    "publish:docs": "easystatic deploy --repo kriasoft/babel-starter-kit",
+    "start": "easystatic docs"
   }
 }

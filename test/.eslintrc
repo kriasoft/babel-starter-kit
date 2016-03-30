@@ -1,5 +1,9 @@
 {
+  "env": {
+    "mocha": true
+  },
   "rules": {
-    "no-unused-expressions": false
+    "no-unused-expressions": 0,
+    "padded-blocks": 0
   }
 }
