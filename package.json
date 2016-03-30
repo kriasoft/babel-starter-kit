@@ -49,6 +49,6 @@
     "build": "rimraf lib && babel src --out-dir lib",
     "publish": "rimraf lib && babel src --out-dir lib",
     "publish:docs": "easystatic deploy --repo kriasoft/babel-starter-kit",
-    "start": "easystatic docs"
+    "start": "easystatic start docs"
   }
 }

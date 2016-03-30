@@ -7,16 +7,21 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-class Greeting {
-
-  constructor(name) {
-    this.name = name || 'Guest';
-  }
-
-  hello() {
-    return `Welcome, ${this.name}!`;
-  }
-
+.stats {
+  list-style: none;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: color(var(--header-color) alpha(-30%));
 }
 
-export default Greeting;
+.stats__item {
+  display: inline-block;
+  padding: 0 10px 0 0;
+  margin: 0;
+}
+
+.stats__item span {
+  padding-right: 3px;
+}
+

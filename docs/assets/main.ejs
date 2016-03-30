@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title><%= title %></title>
+  <meta name="description" content="Babel Starter Kit is a project template for authoring and publishing JavaScript libraries">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="<%= base %>/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700italic">
+  <link rel="stylesheet" href="<%= base %>/main.css">
+</head>
+<body>
+  <%- include('header'); %>
+  <div class="content">
+    <div class="content-left"></div>
+    <div class="content-right">
+      <%- content %>
+    </div>
+  </div>
+  <script src="<%= base %>/main.js"></script>
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-33821884-1','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
