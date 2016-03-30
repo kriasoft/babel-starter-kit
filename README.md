@@ -19,7 +19,8 @@
 
 ### Getting Started
 
-Start by cloning this repo and installing project dependencies:
+For better experience, make sure that you have `npm v3+` installed. Start by cloning this repo and
+installing project dependencies:
 
 ```
 $ git clone -o babel-starter-kit -b master --single-branch \
