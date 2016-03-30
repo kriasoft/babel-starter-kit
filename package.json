@@ -44,7 +44,7 @@
     "test": "mocha test --compilers js:babel-register",
     "build": "rimraf lib && babel src --out-dir lib",
     "publish": "rimraf lib && babel src --out-dir lib",
-    "publish:docs": "easystatic deploy --repo kriasoft/babel-starter-kit",
+    "publish:docs": "easystatic deploy --repo <%= githubUsername %>/<%= name %>",
     "start": "easystatic start docs"
   }
 }
