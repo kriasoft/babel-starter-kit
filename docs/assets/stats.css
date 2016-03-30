@@ -8,20 +8,25 @@
  */
 
 .stats {
-  list-style: none;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-  color: color(var(--header-color) alpha(-30%));
+  font-size: 12px;
+  font-weight: normal;
 }
 
-.stats__item {
-  display: inline-block;
-  padding: 0 10px 0 0;
-  margin: 0;
+.stats__link {
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+  margin-right: 10px;
 }
 
-.stats__item span {
-  padding-right: 3px;
+.stats__link:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
+.stats__link:hover .stats__icon {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.stats__icon {
+  padding-right: 6px;
+  fill: rgba(255, 255, 255, .8);
+}
