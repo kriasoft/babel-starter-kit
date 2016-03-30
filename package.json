@@ -1,21 +1,14 @@
 {
   "name": "generator-javascript",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A project template for authoring and publishing JavaScript libraries",
-  "license": "MIT",
-  "main": "app/index.js",
-  "repository": "https://github.com/kriasoft/babel-starter-kit/tree/yeoman-generator",
-  "author": {
-    "name": "Kriasoft",
-    "email": "support@kriasoft.com",
-    "url": "http://www.kriasoft.com"
-  },
+  "homepage": "https://www.kriasoft.com/babel-starter-kit",
+  "repository": "kriasoft/babel-starter-kit",
+  "author": "Kriasoft <hello@kriasoft.com> (https://www.kriasoft.com)",
   "contributors": [
-    "Konstantin Tarkus <hello@tarkus.me>"
+    "Konstantin Tarkus <hello@tarkus.me> (https://angel.co/koistya)"
   ],
-  "scripts": {
-    "test": "mocha"
-  },
+  "license": "MIT",
   "files": [
     "app",
     "babel-starter-kit"
@@ -35,16 +28,36 @@
     "esnext",
     "react"
   ],
+  "main": "app/index.js",
   "dependencies": {
     "chalk": "^1.0.0",
-    "glob": "^5.0.10",
-    "lodash": "^3.9.3",
-    "npm-name": "^1.1.1",
-    "yeoman-generator": "^0.19.0",
+    "deep-extend": "^0.4.0",
+    "generator-node": "^1.7.0",
+    "glob": "^7.0.3",
+    "inquirer-npm-name": "^1.0.0",
+    "lodash": "^4.6.1",
+    "mkdirp": "^0.5.1",
+    "superb": "^1.0.0",
+    "yeoman-generator": "^0.22.2",
     "yosay": "^1.0.2"
   },
   "devDependencies": {
-    "mocha": "*",
-    "mockery": "^1.4.0"
+    "gulp": "^3.6.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "mocha": "^2.2.5",
+    "mockery": "^1.4.0",
+    "yeoman-assert": "^2.0.0",
+    "yeoman-test": "^1.0.0"
+  },
+  "scripts": {
+    "mocha": "mocha test",
+    "test": "gulp",
+    "prepublish": "gulp prepublish"
   }
 }
