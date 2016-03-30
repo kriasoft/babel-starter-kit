@@ -1,5 +1,5 @@
 ---
-title: Babel Starter Kit
+title: Babel Starter Kit ∙ A project template for authoring and publishing JavaScript libraries
 ---
 
 # Babel Starter Kit

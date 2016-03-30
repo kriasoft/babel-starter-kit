@@ -1,9 +1,12 @@
 /**
- * Babel Starter Kit | https://github.com/kriasoft/babel-starter-kit
- * Copyright (c) Konstantin Tarkus <hello@tarkus.me> | The MIT License
+ * <%= name %>
+ *
+ * Copyright © 2016 <%= author %>. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
  */
 
-import { describe, it } from 'mocha';
 import { expect } from 'chai';
 import Greeting from '../src/Greeting';
 

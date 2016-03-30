@@ -1,17 +1,11 @@
-/* ==========================================================================
-   Layout styles
-   ========================================================================== */
-
-body {
-  background-color: #f5fcff;
-  font-size: 18px;
-  font-family: 'Lato', sans-serif;
-}
-
-.container {
-  margin: 0 auto;
-  width: var(--max-content-width);
-}
+/**
+ * <%= name %>
+ *
+ * Copyright © 2016 <%= author %>. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
 
 .header {
   padding: 1.5rem 0;
@@ -19,7 +13,7 @@ body {
   color: var(--header-color);
 }
 
-.logo {
+.header__logo {
   color: var(--logo-color);
   text-decoration: none;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
@@ -29,33 +23,32 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.logo-img {
+.header__logo-img {
   margin-right: 10px;
   width: 164px;
   height: 64px;
   vertical-align: middle;
 }
 
-.author {
+.header__author {
   float: right;
   padding: 18px 0;
   font-size: 18px;
   color: rgba(255, 255, 255, .6);
 }
-.author a {
+.header__author a {
   color: rgba(255, 255, 255, .8);
   text-decoration: none;
 }
-.author a:hover {
+.header__author a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
-
-.hero {
+.header__hero {
   padding: 50px 0 30px;
 }
 
-.hero-title {
+.header__hero-title {
   margin: 0;
   padding: 0 0 15px;
   font-weight: 400;
@@ -63,7 +56,7 @@ body {
   line-height: 1em;
 }
 
-.hero-desc {
+.header__hero-desc {
   margin: 0;
   padding: 0 0 30px;
   letter-spacing: 1px;
@@ -71,14 +64,14 @@ body {
   font-size: 1.5rem;
 }
 
-.hero-img {
+.header__hero-img {
   margin: -20px -20px 0 0;
   float: right;
   width: 256px;
   height: 256px;
 }
 
-.hero-btn {
+.header__hero-btn {
   display: inline-block;
   margin: 1rem 1rem 0 0;
   padding: .8rem 2rem .875rem 2rem;
@@ -89,19 +82,19 @@ body {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
-.hero-btn:hover {
+.header__hero-btn:hover {
   background: rgba(249, 220, 62, 1);
 }
 
-.hero-btn--muted {
+.header__hero-btn--muted {
   background: rgba(255, 255, 255, .5);
 }
 
-.hero-btn--muted:hover {
+.header__hero-btn--muted:hover {
   background: rgba(255, 255, 255, .6);
 }
 
-.hero-btn-icon {
+.header__hero-btn-icon {
   width: 28px;
   height: 28px;
   vertical-align: middle;
@@ -109,56 +102,19 @@ body {
   fill: var(--header-bg-color);
 }
 
-.version {
+.header__version {
   background: color(var(--header-bg-color) alpha(-90%));
   padding: 15px 0;
   font-size: 16px;
   color: var(--main-color);
 }
 
-.version a {
+.header__version a {
   color: var(--link-color);
   text-decoration: none;
 }
 
-.version a:hover,
-.version a:active {
+.header__version a:hover,
+.header__version a:active {
   color: color(var(--link-color) blackness(10%));
-}
-
-.content {
-  display: table;
-  margin: 0 auto;
-  width: var(--max-content-width);
-}
-
-.content-left,
-.content-right {
-  display: table-cell;
-}
-
-.content-left {
-  width: 200px;
-}
-
-.content-right {
-  padding-left: 20px;
-}
-
-.stats {
-  list-style: none;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-  color: color(var(--header-color) alpha(-30%));
-}
-
-.stats-item {
-  display: inline-block;
-  padding: 0 10px 0 0;
-  margin: 0;
-}
-
-.stats-item span {
-  padding-right: 3px;
 }

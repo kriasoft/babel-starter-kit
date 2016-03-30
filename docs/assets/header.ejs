@@ -1,0 +1,28 @@
+<div class="header">
+  <div class="container">
+    <a class="header__logo" href="<%= base %>/">
+      <img class="header__logo-img" src="<%= base %>/img/babel.svg" alt="Babel" /> Starter Kit
+    </a>
+    <% if (path === '/') { %>
+    <div class="header__hero">
+      <img class="header__hero-img" src="<%= base %>/img/hero.svg" alt="Babel Starter Kit" />
+      <h1 class="header__hero-title">Create better NPM modules</h1>
+      <p class="header__hero-desc">Babel Starter Kit is a project template for <br> authoring and publishing JavaScript libraries</p>
+      <%- include('stats'); %>
+      <a class="header__hero-btn" href="<%= base %>/getting-started">Get Started</a>
+      <a class="header__hero-btn header__hero-btn--muted" href="https://github.com/kriasoft/babel-starter-kit">
+        <img class="header__hero-btn-icon" src="<%= base %>/img/github-icon.svg" alt="GitHub" />
+        View on GitHub
+      </a>
+    </div>
+    <% } %>
+  </div>
+</div>
+<% if (path === '/') { %>
+<div class="header__version">
+  <div class="container">
+    <span>2016-01-01 &nbsp; | &nbsp; v1.0.0</span>
+    <span class="pull-right">Join <a href="https://gitter.im/kriasoft/babel-starter-kit">#babel-starter-kit</a> chatroom on Gitter to stay up to date.</span>
+  </div>
+</div>
+<% } %>
