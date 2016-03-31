@@ -1,6 +1,6 @@
 {
   "name": "generator-javascript",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A project template for authoring and publishing JavaScript libraries",
   "homepage": "https://www.kriasoft.com/babel-starter-kit",
   "repository": "kriasoft/babel-starter-kit",
