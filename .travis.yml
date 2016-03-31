@@ -3,3 +3,9 @@ language: node_js
 node_js:
   - '5'
   - '4'
+before_script:
+  - npm run lint
+script:
+  - npm run test:cover
+after_success:
+  - npm run coveralls

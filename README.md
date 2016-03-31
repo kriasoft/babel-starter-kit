@@ -3,6 +3,7 @@
 [![NPM version](http://img.shields.io/npm/v/generator-javascript.svg?style=flat-square)](https://www.npmjs.com/package/generator-javascript)
 [![NPM downloads](http://img.shields.io/npm/dm/generator-javascript.svg?style=flat-square)](https://www.npmjs.com/package/generator-javascript)
 [![Build Status](http://img.shields.io/travis/kriasoft/babel-starter-kit/master.svg?style=flat-square)](https://travis-ci.org/kriasoft/babel-starter-kit)
+[![Coverage Status](https://img.shields.io/coveralls/kriasoft/babel-starter-kit.svg?style=flat-square)](https://coveralls.io/github/kriasoft/babel-starter-kit)
 [![Dependency Status](http://img.shields.io/david/dev/kriasoft/babel-starter-kit.svg?style=flat-square)](https://david-dm.org/kriasoft/babel-starter-kit#info=devDependencies)
 [![Online Chat](http://img.shields.io/badge/chat_room-%23babel--starter--kit-blue.svg?style=flat-square)](https://gitter.im/kriasoft/babel-starter-kit)
 
@@ -11,9 +12,9 @@
 ### Features
 
 &nbsp; &nbsp; ✓ Next generation JavaScript via [Babel](http://babeljs.io/)<br>
-&nbsp; &nbsp; ✓ Publish to [NPM](https://www.npmjs.com/) as ES5, ES6+ and UMD<br>
-&nbsp; &nbsp; ✓ Pre-configured tests with [Mocha](http://mochajs.org/), [Chai](http://chaijs.com/) and [Sinon](http://sinonjs.org/)<br>
-&nbsp; &nbsp; ✓ Project documentation boilerplate ([demo](http://www.kriasoft.com/babel-starter-kit/))<br>
+&nbsp; &nbsp; ✓ Pre-configured unit tests with [Mocha](http://mochajs.org/), [Chai](http://chaijs.com/), and [Sinon](http://sinonjs.org/)<br>
+&nbsp; &nbsp; ✓ Pre-configured test coverage wtih [Istanbul](https://github.com/gotwarlost/istanbul), and [Coveralls](https://coveralls.io/)<br>
+&nbsp; &nbsp; ✓ Project homepage boilerplate generated from `docs/*.md` files with [Easystatic](https://easystatic.com) ([demo](http://www.kriasoft.com/babel-starter-kit/))<br>
 &nbsp; &nbsp; ✓ [Yeoman](http://yeoman.io/) generator ([generator-javascript](https://github.com/kriasoft/babel-starter-kit/tree/yeoman-generator))<br>
 &nbsp; &nbsp; ✓ Cross-platform, minimum dependencies<br>
 
@@ -36,9 +37,13 @@ Run `npm start` to launch a development server with the documentation site.
 
 ### How to Test
 
+Run one, or a combination of the following commands to lint and test your code:
+
 ```shell
-$ npm run lint          # Lint your code
-$ npm test              # Run unit tests, or `npm test -- --watch`
+$ npm run lint          # Lint the source code with ESLint
+$ npm test              # Run unit tests with Mocha
+$ npm test -- --watch   # Run unit tests wtih Mocha, and watch files for changes
+$ npm run test:cover    # Run unit tests with coverage with Mocha and Istanbul
 ```
 
 ### How to Update
