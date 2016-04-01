@@ -25,6 +25,8 @@ Join [#babel-starter-git](https://gitter.im/kriasoft/babel-starter-kit) on Gitte
 ### Documentation
 
 * [Getting Started](docs/getting-started.md)
+* Recipes
+  * [Testing with Mocha and jsdom](docs/recipes/testing-with-mocha-and-jsdom.md)
 
 See also [www.kriasoft.com/babel-starter-kit](https://www.kriasoft.com/babel-starter-kit/)
 
