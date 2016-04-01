@@ -10,6 +10,7 @@
 @import "vendor/normalize.css";
 @import "header.css";
 @import "stats.css";
+@import "nav.css";
 @import "footer.css";
 
 /* ==========================================================================
@@ -140,10 +141,21 @@ body {
 .content-left,
 .content-right {
   display: table-cell;
+  vertical-align: top;
+  padding-top: 40px;
+}
+
+.content-left > h1:first-child,
+.content-left > h2:first-child,
+.content-left > h3:first-child,
+.content-right > h1:first-child,
+.content-right > h2:first-child,
+.content-right > h3:first-child {
+  margin-top: 0;
 }
 
 .content-left {
-  width: 200px;
+  width: 160px;
 }
 
 .content-right {

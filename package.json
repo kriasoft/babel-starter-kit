@@ -52,7 +52,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "build": "rimraf lib && babel src --out-dir lib",
     "publish": "rimraf lib && babel src --out-dir lib",
-    "publish:docs": "easystatic deploy --repo kriasoft/babel-starter-kit",
+    "publish:docs": "easystatic deploy docs --repo kriasoft/babel-starter-kit",
     "start": "easystatic start docs"
   }
 }
