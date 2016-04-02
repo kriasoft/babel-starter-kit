@@ -1,7 +1,7 @@
 {
   "name": "generator-javascript",
-  "version": "1.1.0",
-  "description": "A project template for authoring and publishing JavaScript libraries",
+  "version": "1.1.1",
+  "description": "Generates a JavaScript library boilerplate for Node.js and the browser with ES6 / ES2015, ESLint, Babel, Mocha, Chai, Sinon, Istanbul, Coveralls...",
   "homepage": "https://www.kriasoft.com/babel-starter-kit",
   "repository": "kriasoft/babel-starter-kit",
   "author": "Kriasoft <hello@kriasoft.com> (https://www.kriasoft.com)",
