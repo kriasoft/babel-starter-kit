@@ -8,7 +8,6 @@
 
 > <%= description %>
 
-
 ### How to Install
 
 ```sh
@@ -23,7 +22,7 @@ $ npm install <%= name %>
 
 Run one, or a combination of the following commands to lint and test your code:
 
-```shell
+```sh
 $ npm run lint          # Lint the source code with ESLint
 $ npm test              # Run unit tests with Mocha
 $ npm test -- --watch   # Run unit tests wtih Mocha, and watch files for changes

@@ -48,7 +48,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "build": "rimraf lib && babel src --out-dir lib",
     "publish": "rimraf lib && babel src --out-dir lib",
-    "publish:docs": "easystatic deploy --repo <%= githubUsername %>/<%= name %>",
+    "publish:docs": "easystatic deploy docs --repo <%= githubUsername %>/<%= name %>",
     "start": "easystatic start docs"
   }
 }
