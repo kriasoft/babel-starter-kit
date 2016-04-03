@@ -33,12 +33,12 @@ See also [www.kriasoft.com/babel-starter-kit](https://www.kriasoft.com/babel-sta
 
 ### Backers
 
-♥ Babel Starter Kit? Help us keep it alive by [donating funds](https://opencollective.com/babel-starter-kit#support) to cover project expenses!
+♥ Babel Starter Kit? Help us keep it alive by [donating funds](https://salt.bountysource.com/teams/babel-starter-kit) to cover project expenses!
 
 <a href="https://github.com/koistya" target="_blank">
   <img src="https://github.com/koistya.png?size=64">
 </a>
-<a href="https://opencollective.com/babel-starter-kit#support" target="_blank">
+<a href="https://salt.bountysource.com/checkout/amount?team=babel-starter-kit&amp;amount=25" target="_blank">
   <img src="https://opencollective.com/static/images/become_backer.svg">
 </a>
 
