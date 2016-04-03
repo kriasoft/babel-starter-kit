@@ -1,4 +1,5 @@
 ---
+id: bsk:recipes:invariant
 title: Throwing errors with Facebook's invariant library ∙ Babel Starter Kit
 ---
 

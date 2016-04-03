@@ -1,4 +1,5 @@
 ---
+id: bsk:recipes:mocha-jsdom
 title: Testing with mocha and jsdom ∙ Babel Starter Kit
 ---
 

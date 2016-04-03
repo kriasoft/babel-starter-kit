@@ -18,6 +18,21 @@
     </div>
     <div class="content-right">
       <%- content %>
+      <% if (path !== '/') { %>
+      <div id="disqus_thread"></div>
+      <script>
+         var disqus_config = function () {
+           this.page.url = 'https://www.kriasoft.com/babel-starter-kit<%= path %>';
+           this.page.identifier = '<%= id %>';
+         };
+        (function(d) {
+          var s = d.createElement('script');
+          s.src = '//kriasoft.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })(document);
+      </script>
+      <% } %>
     </div>
   </div>
   <script src="<%= base %>/main.js"></script>
@@ -25,6 +40,7 @@
     window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
     ga('create','UA-33821884-1','auto');ga('send','pageview')
   </script>
+  <script id="dsq-count-scr" src="https://kriasoft.disqus.com/count.js" async></script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>

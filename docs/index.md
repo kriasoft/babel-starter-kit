@@ -1,4 +1,5 @@
 ---
+id: bsk:home
 title: Babel Starter Kit ∙ A project template for authoring and publishing JavaScript libraries
 ---
 

@@ -118,3 +118,7 @@
 .header__version a:active {
   color: color(var(--link-color) blackness(10%));
 }
+
+.header__join {
+  float: right;
+}

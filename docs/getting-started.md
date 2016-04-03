@@ -1,4 +1,5 @@
 ---
+id: bsk:getting-started
 title: Getting Started ∙ Babel Starter Kit
 ---
 
