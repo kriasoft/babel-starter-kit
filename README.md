@@ -25,8 +25,8 @@ Run one, or a combination of the following commands to lint and test your code:
 ```sh
 $ npm run lint          # Lint the source code with ESLint
 $ npm test              # Run unit tests with Mocha
-$ npm test -- --watch   # Run unit tests wtih Mocha, and watch files for changes
-$ npm run test:cover    # Run unit tests with coverage with Mocha and Istanbul
+$ npm run test:watch    # Run unit tests with Mocha, and watch files for changes
+$ npm run test:cover    # Run unit tests with code coverage by Istanbul
 ```
 
 To launch the documentation site, run:
