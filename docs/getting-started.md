@@ -34,10 +34,10 @@ $ yo javascript
 
 Run one, or a combination of the following commands to lint and test your code:
 
-* `npm run lint       ` — lint the source code with ESLint
-* `npm test           ` — run unit tests with Mocha
-* `npm test -- --watch` — run unit tests with Mocha, and watch files for changes
-* `npm run test:cover ` — run unit tests with coverage with Mocha and Istanbul
+* `npm run lint`       — lint the source code with ESLint
+* `npm test`           — run unit tests with Mocha
+* `npm run test:watch` — run unit tests with Mocha, and watch files for changes
+* `npm run test:cover` — run unit tests with code coverage by Istanbul
 
 ### How to Update
 
