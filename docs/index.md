@@ -16,3 +16,14 @@ Babel Starter Kit is a project template for authoring and publishing JavaScript 
 &nbsp; &nbsp; ✓ Generate a static site for your project via [Easystatic](https://easystatic.com)<br>
 &nbsp; &nbsp; ✓ [Yeoman](http://yeoman.io/) generator ([generator-javascript](https://github.com/kriasoft/babel-starter-kit/tree/yeoman-generator))<br>
 &nbsp; &nbsp; ✓ Cross-platform, minimum dependencies<br>
+
+### Backers
+
+♥ Babel Starter Kit? Help us keep it alive by [donating funds](https://opencollective.com/babel-starter-kit#support) to cover project expenses!
+
+<a href="https://github.com/koistya" target="_blank">
+  <img src="https://github.com/koistya.png?size=64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit#support" target="_blank">
+  <img src="https://opencollective.com/static/images/become_backer.svg">
+</a>

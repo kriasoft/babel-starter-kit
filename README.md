@@ -31,6 +31,17 @@ Join [#babel-starter-git](https://gitter.im/kriasoft/babel-starter-kit) on Gitte
 
 See also [www.kriasoft.com/babel-starter-kit](https://www.kriasoft.com/babel-starter-kit/)
 
+### Backers
+
+♥ Babel Starter Kit? Help us keep it alive by [donating funds](https://opencollective.com/babel-starter-kit#support) to cover project expenses!
+
+<a href="https://github.com/koistya" target="_blank">
+  <img src="https://github.com/koistya.png?size=64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit#support" target="_blank">
+  <img src="https://opencollective.com/static/images/become_backer.svg">
+</a>
+
 ### Related Projects
 
 * [React Starter Kit](https://github.com/kriasoft/react-starter-kit) — Isomorphic web app boilerplate (Node.js/Express, React.js, GraphQL)
