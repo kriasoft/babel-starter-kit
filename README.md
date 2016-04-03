@@ -26,7 +26,8 @@ Join [#babel-starter-git](https://gitter.im/kriasoft/babel-starter-kit) on Gitte
 
 * [Getting Started](docs/getting-started.md)
 * Recipes
-  * [Testing with Mocha and jsdom](docs/recipes/testing-with-mocha-and-jsdom.md)
+  * [Testing with <code>mocha</code> and <code>jsdom</code>](docs/recipes/testing-with-mocha-and-jsdom.md)
+  * [Throwing errors with FB's <code>invariant</code> library](docs/recipes/throwing-errors-with-fbjs-invariant.md)
 
 See also [www.kriasoft.com/babel-starter-kit](https://www.kriasoft.com/babel-starter-kit/)
 
