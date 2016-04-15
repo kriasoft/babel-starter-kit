@@ -36,10 +36,10 @@ See also [www.kriasoft.com/babel-starter-kit](https://www.kriasoft.com/babel-sta
 ♥ Babel Starter Kit? Help us keep it alive by [donating funds](https://www.patreon.com/tarkus) to cover project expenses!
 
 <a href="https://github.com/koistya" target="_blank">
-  <img src="https://github.com/koistya.png?size=64">
+  <img src="https://github.com/koistya.png?size=64" width="64" height="64">
 </a>
-<a href="https://www.patreon.com/bePatron?patAmt=25&amp;u=2475816" target="_blank">
-  <img src="https://opencollective.com/static/images/become_backer.svg">
+<a href="https://www.patreon.com/tarkus" target="_blank">
+  <img src="https://opencollective.com/static/images/become_backer.svg" width="64" height="64">
 </a>
 
 ### Related Projects
