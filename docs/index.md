@@ -1,4 +1,5 @@
 ---
+id: home
 title: <%= name %> ∙ <%= description %>
 ---
 
