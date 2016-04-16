@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Throwing errors with Facebook&#39;s invariant library ∙ Babel Starter Kit</title>
+  <meta name="description" content="Babel Starter Kit is a project template for authoring and publishing JavaScript libraries">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/babel-starter-kit/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700italic">
+  <link rel="stylesheet" href="/babel-starter-kit/main.css">
+</head>
+<body>
+  <div class="header">
+  <div class="container">
+    <a class="header__logo" href="/babel-starter-kit/">
+      <img class="header__logo-img" src="/babel-starter-kit/img/babel.svg" alt="Babel" /> Starter Kit
+    </a>
+        <span class="header__author">
+          made with &nbsp;♥&nbsp; by&nbsp; <a href="https://twitter.com/koistya" rel="author" title="Konstantin Tarkus on Twitter">@koistya</a>
+        </span>
+    
+  </div>
+</div>
+
+
+  <div class="content">
+    <div class="content-left">
+      <div class="nav">
+  <h3 class="nav__title">Quick Start</h3>
+  <ul class="nav__menu">
+    <li class="nav__menu-item">
+      <a class="nav__link" href="/babel-starter-kit/">Overview</a>
+    </li>
+    <li class="nav__menu-item">
+      <a class="nav__link" href="/babel-starter-kit/getting-started">Getting Started</a>
+    </li>
+  </ul>
+  <h3 class="nav__title">Recipes</h3>
+  <ul class="nav__menu">
+    <li class="nav__menu-item">
+      <a class="nav__link" href="/babel-starter-kit/recipes/testing-with-mocha-and-jsdom">Testing with <code>mocha</code> and <code>jsdom</code></a>
+    </li>
+    <li class="nav__menu-item nav__menu-item--selected">
+      <a class="nav__link" href="/babel-starter-kit/recipes/throwing-errors-with-fbjs-invariant">Throwing errors with <code>invariant</code></a>
+    </li>
+  </ul>
+</div>
+
+    </div>
+    <div class="content-right">
+      <h1>Throwing errors with FB's <code>invariant</code> library</h1>
+<p>If you're familiar with Facebook's <a href="https://github.com/facebook/react">React</a>,
+<a href="https://github.com/facebook/react-native">React Native</a>, <a href="https://github.com/facebook/flux">Flux</a>,
+<a href="https://github.com/facebook/relay">Relay</a> libraries, you might notice the extensive use of the
+<code>invariant</code> function from <code>fbjs</code> npm module in their code bases. The goal of which is being able to
+provide descriptive error messages for the development environment. These error messages are going
+to be replaced by a single generic error when the project is compiled for production environments by
+Babel and a module bundler, such as Webpack or Browserify. This allows to minimize the client-side
+bundle size, and at the same time provide a good developer experience.</p>
+<p>Here is how it works. First, you need to install <code>fbjs</code> and <code>fbjs-scripts</code> npm modules by running:</p>
+<pre><code class="language-sh">$ npm install fbjs@next --save
+$ npm install fbjs-scripts@next --save-dev
+</code></pre>
+<p>Then update Babel configuration located in <code>pacakge.json</code> file by including <code>dev-expression</code> plugin
+from the <code>fbjs-scripts</code> npm module:</p>
+<pre><code class="language-json">{
+  &quot;babel&quot;: {
+    &quot;presets&quot;: [
+      &quot;es2015&quot;,
+      &quot;stage-0&quot;
+    ],
+    &quot;plugins&quot;: [
+      &quot;fbjs-scripts/babel-6/dev-expression&quot;,
+      &quot;transform-runtime&quot;
+    ]
+  }
+}
+</code></pre>
+<p>Now you can use the <code>invariant</code> helper function in your code as follows:</p>
+<pre><code class="language-js">import invariant from 'fbjs/lib/invariant'
+
+class Greeting {
+
+  constructor(name) {
+    if (name) {
+      invariant(
+        typeof name === 'string' || name instanceof String,
+        'The name argument must be a string'
+      );
+      this.name = name;
+    } else {
+      this.name = 'Guest';
+    }
+    this.name = name || 'Guest';
+  }
+
+  hello() {
+    return `Welcome, ${this.name}!`;
+  }
+
+}
+
+export default Greeting;
+</code></pre>
+<p>When you bundle your project for a production environment, you need to make sure that
+<code>process.env.NODE_ENV</code> variable is set to <code>'production'</code>. Here is an example how to do it with
+Webpack — <a href="https://github.com/kriasoft/react-starter-kit/blob/master/tools/webpack.config.js#L28">webpack.config.js#L28</a>
+in <a href="https://www.reactstarterkit.com">React Starter Kit</a>.</p>
+
+      
+      <div id="disqus_thread"></div>
+      <script>
+         var disqus_config = function () {
+           this.page.url = 'https://www.kriasoft.com/babel-starter-kit/recipes/throwing-errors-with-fbjs-invariant';
+           this.page.identifier = 'bsk:recipes:invariant';
+         };
+        (function(d) {
+          var s = d.createElement('script');
+          s.src = '//kriasoft.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })(document);
+      </script>
+      
+    </div>
+  </div>
+  <script src="/babel-starter-kit/main.js"></script>
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-33821884-1','auto');ga('send','pageview')
+  </script>
+  <script id="dsq-count-scr" src="https://kriasoft.disqus.com/count.js" async></script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Testing with mocha and jsdom ∙ Babel Starter Kit</title>
+  <meta name="description" content="Babel Starter Kit is a project template for authoring and publishing JavaScript libraries">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/babel-starter-kit/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700italic">
+  <link rel="stylesheet" href="/babel-starter-kit/main.css">
+</head>
+<body>
+  <div class="header">
+  <div class="container">
+    <a class="header__logo" href="/babel-starter-kit/">
+      <img class="header__logo-img" src="/babel-starter-kit/img/babel.svg" alt="Babel" /> Starter Kit
+    </a>
+        <span class="header__author">
+          made with &nbsp;♥&nbsp; by&nbsp; <a href="https://twitter.com/koistya" rel="author" title="Konstantin Tarkus on Twitter">@koistya</a>
+        </span>
+    
+  </div>
+</div>
+
+
+  <div class="content">
+    <div class="content-left">
+      <div class="nav">
+  <h3 class="nav__title">Quick Start</h3>
+  <ul class="nav__menu">
+    <li class="nav__menu-item">
+      <a class="nav__link" href="/babel-starter-kit/">Overview</a>
+    </li>
+    <li class="nav__menu-item">
+      <a class="nav__link" href="/babel-starter-kit/getting-started">Getting Started</a>
+    </li>
+  </ul>
+  <h3 class="nav__title">Recipes</h3>
+  <ul class="nav__menu">
+    <li class="nav__menu-item nav__menu-item--selected">
+      <a class="nav__link" href="/babel-starter-kit/recipes/testing-with-mocha-and-jsdom">Testing with <code>mocha</code> and <code>jsdom</code></a>
+    </li>
+    <li class="nav__menu-item">
+      <a class="nav__link" href="/babel-starter-kit/recipes/throwing-errors-with-fbjs-invariant">Throwing errors with <code>invariant</code></a>
+    </li>
+  </ul>
+</div>
+
+    </div>
+    <div class="content-right">
+      <h1>Testing with mocha and jsdom</h1>
+<p>For browser-specific code, such as the one that relies on <code>document</code>, <code>window</code> global variables and
+DOM manipulation, you may want to consider using <a href="https://github.com/tmpvar/jsdom">jsdom</a> library
+that emulates browser environment, and in combination with <a href="https://github.com/rstacruz/mocha-jsdom">mocha-jsdom</a>,
+can be fast and reliable tool for testing such type of code.</p>
+<p>Let's see how it works on an example. Suppose you have a component that parses a URL string by
+using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">document.createElement</a>
+method as follows:</p>
+<h4><code>src/parseUrl.js</code></h4>
+<pre><code class="language-js">function parseUrl(url) {
+  const link = document.createElement('a');
+  link.href = url;
+  return {
+    protocol: link.protocol,
+    hostname: link.hostname,
+    port: link.port,
+    pathname: link.pathname,
+    search: link.search,
+    hash: link.hash,
+    host: link.host
+  };
+}
+
+export default parseUrl;
+</code></pre>
+<p>In order to create a unit test for this component, first we need to install <code>jsdom</code> and
+<code>mocha-jsdom</code> npm modules by running:</p>
+<pre><code class="language-sh">npm install jsdom mocha-jsdom --save-dev
+</code></pre>
+<p>Then create a unit test for the component above.</p>
+<h4><code>test/parseUrlSpec.js</code></h4>
+<pre><code class="language-js">import jsdom from 'mocha-jsdom';
+import { expect } from 'chai';
+import parseUrl from '../src/parseUrl';
+
+describe('parseUrl', function() {
+
+  jsdom(); // Emulates the browser environment
+
+  it('should be able to parse a URL string', function() {
+    const url = 'http://example.com:3000/pathname/?search=test#hash';
+    const result = parseUrl(url);
+    expect(result).to.be.deep.equal({
+      protocol: 'http:',
+      hostname: 'example.com',
+      port: '3000',
+      pathname: '/pathname/',
+      search: '?search=test',
+      hash: '#hash',
+      host: 'example.com:3000'
+    });
+  });
+
+});
+</code></pre>
+<p>Now when you run <code>npm test</code>, the unit test above should pass just fine, as if it was executed in a
+browser.</p>
+
+      
+      <div id="disqus_thread"></div>
+      <script>
+         var disqus_config = function () {
+           this.page.url = 'https://www.kriasoft.com/babel-starter-kit/recipes/testing-with-mocha-and-jsdom';
+           this.page.identifier = 'bsk:recipes:mocha-jsdom';
+         };
+        (function(d) {
+          var s = d.createElement('script');
+          s.src = '//kriasoft.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })(document);
+      </script>
+      
+    </div>
+  </div>
+  <script src="/babel-starter-kit/main.js"></script>
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-33821884-1','auto');ga('send','pageview')
+  </script>
+  <script id="dsq-count-scr" src="https://kriasoft.disqus.com/count.js" async></script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

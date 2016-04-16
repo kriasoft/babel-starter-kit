@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Getting Started ∙ Babel Starter Kit</title>
+  <meta name="description" content="Babel Starter Kit is a project template for authoring and publishing JavaScript libraries">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/babel-starter-kit/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700italic">
+  <link rel="stylesheet" href="/babel-starter-kit/main.css">
+</head>
+<body>
+  <div class="header">
+  <div class="container">
+    <a class="header__logo" href="/babel-starter-kit/">
+      <img class="header__logo-img" src="/babel-starter-kit/img/babel.svg" alt="Babel" /> Starter Kit
+    </a>
+        <span class="header__author">
+          made with &nbsp;♥&nbsp; by&nbsp; <a href="https://twitter.com/koistya" rel="author" title="Konstantin Tarkus on Twitter">@koistya</a>
+        </span>
+    
+  </div>
+</div>
+
+
+  <div class="content">
+    <div class="content-left">
+      <div class="nav">
+  <h3 class="nav__title">Quick Start</h3>
+  <ul class="nav__menu">
+    <li class="nav__menu-item">
+      <a class="nav__link" href="/babel-starter-kit/">Overview</a>
+    </li>
+    <li class="nav__menu-item nav__menu-item--selected">
+      <a class="nav__link" href="/babel-starter-kit/getting-started">Getting Started</a>
+    </li>
+  </ul>
+  <h3 class="nav__title">Recipes</h3>
+  <ul class="nav__menu">
+    <li class="nav__menu-item">
+      <a class="nav__link" href="/babel-starter-kit/recipes/testing-with-mocha-and-jsdom">Testing with <code>mocha</code> and <code>jsdom</code></a>
+    </li>
+    <li class="nav__menu-item">
+      <a class="nav__link" href="/babel-starter-kit/recipes/throwing-errors-with-fbjs-invariant">Throwing errors with <code>invariant</code></a>
+    </li>
+  </ul>
+</div>
+
+    </div>
+    <div class="content-right">
+      <h1>Getting Started</h1>
+<p>For better experience, make sure that you have <code>npm v3+</code> installed. Start by cloning this repo and
+installing project dependencies:</p>
+<pre><code class="language-sh">$ git clone -o babel-starter-kit \
+      -b master --single-branch \
+      https://github.com/kriasoft/babel-starter-kit.git \
+      &lt;your-project-name&gt;
+$ cd &lt;your-project-name&gt;
+$ npm install
+</code></pre>
+<p>Update your name in <code>LICENSE.txt</code> and project information in <code>package.json</code> and <code>README.md</code> files.
+Write your code in <code>src</code> folder, write tests in <code>test</code> folder. Run <code>npm run build</code> to compile the
+source code into a distributable format. Write documentation in markdown format in <code>docs</code> folder.
+Run <code>npm start</code> to launch a development server with the documentation site.</p>
+<p>Alternatively, start a new project with <strong>Yeoman</strong>:</p>
+<pre><code class="language-sh">$ npm install -g generator-javascript
+$ mkdir &lt;your-project-name&gt;
+$ cd &lt;your-project-name&gt;
+$ yo javascript
+</code></pre>
+<h3>How to Test</h3>
+<p>Run one, or a combination of the following commands to lint and test your code:</p>
+<ul>
+<li><code>npm run lint</code>       — lint the source code with ESLint</li>
+<li><code>npm test</code>           — run unit tests with Mocha</li>
+<li><code>npm run test:watch</code> — run unit tests with Mocha, and watch files for changes</li>
+<li><code>npm run test:cover</code> — run unit tests with code coverage by Istanbul</li>
+</ul>
+<h3>How to Update</h3>
+<p>Down the road you can fetch and merge the recent changes from this repo back into your project:</p>
+<pre><code class="language-sh">$ git checkout master
+$ git fetch babel-starter-kit
+$ git merge babel-starter-kit/master
+$ npm install
+</code></pre>
+
+      
+      <div id="disqus_thread"></div>
+      <script>
+         var disqus_config = function () {
+           this.page.url = 'https://www.kriasoft.com/babel-starter-kit/getting-started';
+           this.page.identifier = 'bsk:getting-started';
+         };
+        (function(d) {
+          var s = d.createElement('script');
+          s.src = '//kriasoft.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })(document);
+      </script>
+      
+    </div>
+  </div>
+  <script src="/babel-starter-kit/main.js"></script>
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-33821884-1','auto');ga('send','pageview')
+  </script>
+  <script id="dsq-count-scr" src="https://kriasoft.disqus.com/count.js" async></script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
