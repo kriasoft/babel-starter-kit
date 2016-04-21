@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### [Unreleased][unreleased]
 
 - Allow to execute tests in a browser environment (PLANNED)
+- Publish as CommonJS, ES2015 and UMD via [Rollup](http://rollupjs.org/). See `tools/build.js`.
 
 ### [v1.1.2] - 2016-04-03
 

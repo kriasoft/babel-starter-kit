@@ -31,6 +31,11 @@ $ cd <your-project-name>
 $ yo javascript
 ```
 
+### How to Build
+
+Running `npm run build` will compile source files to a distributable format (CommonJS, ES6 and UMD)
+ready to be published to NPM from the `dist` folder. See `tools/build.js` for more info.
+
 ### How to Test
 
 Run one, or a combination of the following commands to lint and test your code:

@@ -16,6 +16,7 @@ Join [#babel-starter-git](https://gitter.im/kriasoft/babel-starter-kit) on Gitte
 ### Features
 
 &nbsp; &nbsp; ✓ Author your code, including tests, in [ES2015](https://babeljs.io/docs/learn-es2015/)+ via [Babel](http://babeljs.io/)<br>
+&nbsp; &nbsp; ✓ Publish as CommonJS, ES2015 and UMD via [Rollup](http://rollupjs.org/)<br>
 &nbsp; &nbsp; ✓ Pre-configured unit tests with [Mocha](http://mochajs.org/), [Chai](http://chaijs.com/) and [Sinon](http://sinonjs.org/)<br>
 &nbsp; &nbsp; ✓ Pre-configured test coverage with [Istanbul](https://github.com/gotwarlost/istanbul) and [Coveralls](https://coveralls.io/)<br>
 &nbsp; &nbsp; ✓ Generate a homepage for your project with [Easystatic](https://easystatic.com) ([demo](http://www.kriasoft.com/babel-starter-kit/))<br>
