@@ -6,6 +6,9 @@
 [![Coverage Status](https://img.shields.io/coveralls/kriasoft/babel-starter-kit.svg?style=flat-square)](https://coveralls.io/github/kriasoft/babel-starter-kit)
 [![Dependency Status](http://img.shields.io/david/dev/kriasoft/babel-starter-kit.svg?style=flat-square)](https://david-dm.org/kriasoft/babel-starter-kit#info=devDependencies)
 [![Online Chat](http://img.shields.io/badge/chat_room-%23babel--starter--kit-blue.svg?style=flat-square)](https://gitter.im/kriasoft/babel-starter-kit)
+[![OpenCollective](https://opencollective.com/babel-starter-kit/badge/backers.svg)](#backers)
+[![OpenCollective](https://opencollective.com/babel-starter-kit/badge/sponsors.svg)](#sponsors)
+
 
 > Babel Starter Kit is a project template for authoring and publishing JavaScript libraries using
 > [ES2015](https://babeljs.io/docs/learn-es2015/)+ via [Babel](https://babeljs.io/)
@@ -34,14 +37,75 @@ See also [www.kriasoft.com/babel-starter-kit](https://www.kriasoft.com/babel-sta
 
 ### Backers
 
-♥ Babel Starter Kit? Help us keep it alive by [donating funds](https://www.patreon.com/tarkus) to cover project expenses!
+♥ Babel Starter Kit? Help us keep it alive by [donating funds](https://opencollective.com/babel-starter-kit#backer)]
 
-<a href="https://github.com/koistya" target="_blank">
-  <img src="https://github.com/koistya.png?size=64" width="64" height="64">
-</a>
-<a href="https://www.patreon.com/tarkus" target="_blank">
-  <img src="https://opencollective.com/static/images/become_backer.svg" width="64" height="64">
-</a>
+<a href="https://opencollective.com/babel-starter-kit/backer/0/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/0/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/1/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/1/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/2/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/2/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/3/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/3/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/4/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/4/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/5/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/5/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/6/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/6/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/7/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/7/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/8/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/8/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/9/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/9/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/10/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/10/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/11/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/11/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/12/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/12/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/13/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/13/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/14/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/14/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/15/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/15/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/16/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/16/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/17/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/17/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/18/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/18/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/19/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/19/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/20/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/20/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/21/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/21/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/22/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/22/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/23/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/23/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/24/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/24/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/25/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/25/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/26/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/26/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/27/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/27/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/28/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/28/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/backer/29/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/backer/29/avatar.svg"></a>
+
+
+### Sponsors
+
+Become a sponsor and get your logo on our repo and website. [[Become a sponsor](https://opencollective.com/babel-starter-kit#sponsor)]
+
+<a href="https://opencollective.com/babel-starter-kit/sponsor/0/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/1/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/2/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/3/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/4/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/5/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/6/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/7/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/8/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/9/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/9/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/10/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/10/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/11/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/11/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/12/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/12/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/13/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/13/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/14/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/14/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/15/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/15/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/16/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/16/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/17/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/17/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/18/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/18/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/19/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/19/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/20/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/20/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/21/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/21/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/22/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/22/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/23/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/23/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/24/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/24/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/25/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/25/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/26/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/26/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/27/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/27/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/28/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/28/avatar.svg"></a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/29/website" target="_blank"><img src="https://opencollective.com/babel-starter-kit/sponsor/29/avatar.svg"></a>
+
 
 ### Related Projects
 
