@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 ### [Unreleased][unreleased]
 
 - Allow to execute tests in a browser environment (PLANNED)
+
+### [v1.2.0] - 2016-05-04
+
+- Add `tools/build.js` script
+- Build source files into `dist` folder
 - Publish as CommonJS, ES2015 and UMD via [Rollup](http://rollupjs.org/). See `tools/build.js`.
 
 ### [v1.1.2] - 2016-04-03
@@ -25,7 +30,8 @@ All notable changes to this project will be documented in this file.
 - Clean up the code and `package.json` file, update project dependencies
 - Integrate [Easystatic](https://easystatic.com) that generates a static site from the `docs/*.md` files
 
-[unreleased]: https://github.com/kriasoft/babel-starter-kit/compare/v1.1.2...HEAD
+[unreleased]: https://github.com/kriasoft/babel-starter-kit/compare/v1.2.0...HEAD
+[v1.2.0]: https://github.com/kriasoft/babel-starter-kit/compare/v1.1.2...v1.2.0
 [v1.1.2]: https://github.com/kriasoft/babel-starter-kit/compare/v1.1.0...v1.1.2
 [v1.1.0]: https://github.com/kriasoft/babel-starter-kit/compare/v1.0.0...v1.1.0
 [v1.0.0]: https://github.com/kriasoft/babel-starter-kit/compare/v0.1.1...v1.0.0
