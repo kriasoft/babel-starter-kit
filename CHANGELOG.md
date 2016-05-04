@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 
 - Add `tools/build.js` script
 - Build source files into `dist` folder
+- Update npm modules
 - Publish as CommonJS, ES2015 and UMD via [Rollup](http://rollupjs.org/). See `tools/build.js`.
 
 ### [v1.1.2] - 2016-04-03
