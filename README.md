@@ -10,7 +10,8 @@
 > Babel Starter Kit is a project template for authoring and publishing JavaScript libraries using
 > [ES2015](https://babeljs.io/docs/learn-es2015/)+ via [Babel](https://babeljs.io/)
 
-See the [changelog](CHANGELOG.md) &nbsp;|&nbsp;
+See the [getting started](https://github.com/kriasoft/babel-starter-kit/blob/master/docs/getting-started.md)
+guide and [recipes](https://github.com/kriasoft/babel-starter-kit/tree/master/docs/recipes) &nbsp;|&nbsp;
 Join [#babel-starter-git](https://gitter.im/kriasoft/babel-starter-kit) on Gitter to stay up to date &nbsp;|&nbsp;
 Visit out [sponsors](https://opencollective.com/babel-starter-kit#sponsor)
 
@@ -63,7 +64,7 @@ to cover project expenses!
 ### Related Projects
 
 * [React Starter Kit](https://github.com/kriasoft/react-starter-kit) — Isomorphic web app boilerplate (Node.js/Express, React.js, GraphQL)
-* [React Static Boilerplate](https://github.com/kriasoft/react-starter-kit) — Generate static websites from React components with Webpack
+* [React Static Boilerplate](https://github.com/koistya/react-static-boilerplate) — Generate static websites from React components with Webpack
 * [Universal Router](https://github.com/kriasoft/universal-router) — Isomorphic router for web and single-page applications (SPA)
 * [Membership Database](https://github.com/membership/membership.db) — SQL database boilerplate for web app users, roles and auth tokens
 
