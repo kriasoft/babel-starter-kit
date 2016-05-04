@@ -10,8 +10,15 @@
 > Babel Starter Kit is a project template for authoring and publishing JavaScript libraries using
 > [ES2015](https://babeljs.io/docs/learn-es2015/)+ via [Babel](https://babeljs.io/)
 
-See the [changelog](CHANGELOG.md) for past and future (planned) changes to the project &nbsp;|&nbsp;
-Join [#babel-starter-git](https://gitter.im/kriasoft/babel-starter-kit) on Gitter to stay up to date
+See the [changelog](CHANGELOG.md) &nbsp;|&nbsp;
+Join [#babel-starter-git](https://gitter.im/kriasoft/babel-starter-kit) on Gitter to stay up to date &nbsp;|&nbsp;
+Visit out [sponsors](https://opencollective.com/babel-starter-kit#sponsor)
+
+<p align="center">
+  <a href="https://opencollective.com/babel-starter-kit/sponsor/0/website" target="_blank">
+    <img src="https://opencollective.com/babel-starter-kit/sponsor/0/avatar.svg" width="140" height="64">
+  </a>
+</p>
 
 ### Features
 
@@ -34,23 +41,36 @@ See also [www.kriasoft.com/babel-starter-kit](https://www.kriasoft.com/babel-sta
 
 ### Backers
 
-♥ Babel Starter Kit? Help us keep it alive by [donating funds](https://www.patreon.com/tarkus) to cover project expenses!
+Love **Babel Starter Kit** work and community? Help us keep it alive by [donating funds](https://opencollective.com/babel-starter-kit#backer)
+to cover project expenses!
 
-<a href="https://github.com/koistya" target="_blank">
-  <img src="https://github.com/koistya.png?size=64" width="64" height="64">
+<a href="https://opencollective.com/babel-starter-kit/backer/0/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/0/avatar.svg" width="64" height="64">
 </a>
-<a href="https://www.patreon.com/tarkus" target="_blank">
-  <img src="https://opencollective.com/static/images/become_backer.svg" width="64" height="64">
+<a href="https://opencollective.com/babel-starter-kit/backer/1/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/1/avatar.svg" width="64" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/backer/2/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/2/avatar.svg" width="64" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/backer/3/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/3/avatar.svg" width="64" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/backer/4/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/4/avatar.svg" width="64" height="64">
 </a>
 
 ### Related Projects
 
 * [React Starter Kit](https://github.com/kriasoft/react-starter-kit) — Isomorphic web app boilerplate (Node.js/Express, React.js, GraphQL)
+* [React Static Boilerplate](https://github.com/kriasoft/react-starter-kit) — Generate static websites from React components with Webpack
+* [Universal Router](https://github.com/kriasoft/universal-router) — Isomorphic router for web and single-page applications (SPA)
+* [Membership Database](https://github.com/membership/membership.db) — SQL database boilerplate for web app users, roles and auth tokens
 
 ### Get in Touch
 
- * [#babel-starter-kit](https://gitter.im/kriasoft/babel-starter-kit) on Gitter
- * [@koistya](https://twitter.com/koistya) on [Codementor](https://www.codementor.io/koistya)
+* [#babel-starter-kit](https://gitter.im/kriasoft/babel-starter-kit) on Gitter
+* [@koistya](https://twitter.com/koistya) on [Codementor](https://www.codementor.io/koistya)
 
 ### License
 
