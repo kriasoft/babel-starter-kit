@@ -10,16 +10,6 @@
 > Babel Starter Kit is a project template for authoring and publishing JavaScript libraries using
 > [ES2015](https://babeljs.io/docs/learn-es2015/)+ via [Babel](https://babeljs.io/)
 
-See the [getting started](https://github.com/kriasoft/babel-starter-kit/blob/master/docs/getting-started.md)
-guide and [recipes](https://github.com/kriasoft/babel-starter-kit/tree/master/docs/recipes) &nbsp;|&nbsp;
-Join [#babel-starter-git](https://gitter.im/kriasoft/babel-starter-kit) on Gitter to stay up to date &nbsp;|&nbsp;
-Visit out [sponsors](https://opencollective.com/babel-starter-kit#sponsor)
-
-<p align="center">
-  <a href="https://opencollective.com/babel-starter-kit/sponsor/0/website" target="_blank">
-    <img src="https://opencollective.com/babel-starter-kit/sponsor/0/avatar.svg" width="140" height="64">
-  </a>
-</p>
 
 ### Features
 
@@ -30,15 +20,37 @@ Visit out [sponsors](https://opencollective.com/babel-starter-kit#sponsor)
 &nbsp; &nbsp; ✓ Generate a homepage for your project with [Easystatic](https://easystatic.com) ([demo](http://www.kriasoft.com/babel-starter-kit/))<br>
 &nbsp; &nbsp; ✓ [Yeoman](http://yeoman.io/) generator ([generator-javascript](https://github.com/kriasoft/babel-starter-kit/tree/yeoman-generator))<br>
 &nbsp; &nbsp; ✓ Cross-platform, minimum dependencies<br>
+&nbsp; &nbsp; ✓ 24/7 community support on [Gitter](https://gitter.im/kriasoft/babel-starter-kit)<br>
+
+
+### Sponsors
+
+<a href="https://opencollective.com/babel-starter-kit/sponsor/0/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/sponsor/0/avatar.svg" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/1/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/sponsor/1/avatar.svg" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/2/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/sponsor/2/avatar.svg" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/3/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/sponsor/3/avatar.svg" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/sponsor/4/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/sponsor/4/avatar.svg" height="64">
+</a>
+
 
 ### Documentation
 
 * [Getting Started](docs/getting-started.md)
-* Recipes
+* [Recipes](docs/recipes)
   * [Testing with <code>mocha</code> and <code>jsdom</code>](docs/recipes/testing-with-mocha-and-jsdom.md)
   * [Throwing errors with FB's <code>invariant</code> library](docs/recipes/throwing-errors-with-fbjs-invariant.md)
 
 See also [www.kriasoft.com/babel-starter-kit](https://www.kriasoft.com/babel-starter-kit/)
+
 
 ### Backers
 
@@ -60,6 +72,28 @@ to cover project expenses!
 <a href="https://opencollective.com/babel-starter-kit/backer/4/website" target="_blank">
   <img src="https://opencollective.com/babel-starter-kit/backer/4/avatar.svg" width="64" height="64">
 </a>
+<a href="https://opencollective.com/babel-starter-kit/backer/5/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/5/avatar.svg" width="64" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/backer/6/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/6/avatar.svg" width="64" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/backer/7/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/7/avatar.svg" width="64" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/backer/8/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/8/avatar.svg" width="64" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/backer/9/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/9/avatar.svg" width="64" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/backer/10/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/10/avatar.svg" width="64" height="64">
+</a>
+<a href="https://opencollective.com/babel-starter-kit/backer/11/website" target="_blank">
+  <img src="https://opencollective.com/babel-starter-kit/backer/11/avatar.svg" width="64" height="64">
+</a>
+
 
 ### Related Projects
 
@@ -68,10 +102,12 @@ to cover project expenses!
 * [Universal Router](https://github.com/kriasoft/universal-router) — Isomorphic router for web and single-page applications (SPA)
 * [Membership Database](https://github.com/membership/membership.db) — SQL database boilerplate for web app users, roles and auth tokens
 
+
 ### Get in Touch
 
 * [#babel-starter-kit](https://gitter.im/kriasoft/babel-starter-kit) on Gitter
 * [@koistya](https://twitter.com/koistya) on [Codementor](https://www.codementor.io/koistya)
+
 
 ### License
 
@@ -79,6 +115,7 @@ Copyright © 2015-2016 Kriasoft, LLC. This source code is licensed under the MIT
 the [LICENSE.txt](https://github.com/kriasoft/react-starter-kit/blob/master/LICENSE.txt) file.
 The documentation to the project is licensed under the [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 license.
+
 
 ---
 Made with ♥ by Konstantin Tarkus ([@koistya](https://twitter.com/koistya)) and [contributors](https://github.com/kriasoft/babel-starter-kit/graphs/contributors)
