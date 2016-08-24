@@ -95,6 +95,12 @@ to cover project expenses!
 </a>
 
 
+### Learn ES6
+
+:mortar_board: &nbsp; **[ES6 Training Course](https://es6.io/friend/konstantin)** by Wes Bos<br>
+:green_book: &nbsp; **[You Don't Know JS: ES6 & Beyond](http://amzn.to/2bzvV51)** by Kyle Simpson (Dec, 2015)<br>
+
+
 ### Related Projects
 
 * [React Starter Kit](https://github.com/kriasoft/react-starter-kit) — Isomorphic web app boilerplate (Node.js/Express, React.js, GraphQL)
