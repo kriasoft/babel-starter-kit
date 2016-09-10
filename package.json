@@ -51,7 +51,7 @@
     "eslint-plugin-react": "^5.1.1",
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^2.4.5",
-    "rollup": "^0.26.2",
+    "rollup": "^0.35.5",
     "rollup-plugin-babel": "^2.4.0",
     "sinon": "^2.0.0-pre"
   },
