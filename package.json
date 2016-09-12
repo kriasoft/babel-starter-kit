@@ -49,6 +49,7 @@
     "eslint-plugin-import": "^1.7.0",
     "eslint-plugin-jsx-a11y": "^1.2.0",
     "eslint-plugin-react": "^5.1.1",
+    "fs-promise": "^0.5.0",
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^2.4.5",
     "rollup": "^0.26.2",
@@ -61,7 +62,7 @@
     "test:watch": "mocha --compilers js:babel-register --reporter min --watch",
     "test:cover": "babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "build": "node tools/build",
+    "build": "babel-node tools/build",
     "prepublish": "npm run build",
     "publish:docs": "easystatic deploy docs --repo kriasoft/babel-starter-kit",
     "start": "easystatic start docs"
