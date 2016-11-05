@@ -28,6 +28,7 @@
     "extends": "airbnb-base"
   },
   "dependencies": {
+    "babel-cli": "^6.18.0",
     "babel-runtime": "^6.11.6"
   },
   "devDependencies": {
@@ -59,6 +60,7 @@
     "build": "node tools/build",
     "prepublish": "npm run build",
     "publish:docs": "easystatic deploy docs --repo kriasoft/babel-starter-kit",
+    "dev": "nodemon --exec babel-node -- src/index.js",
     "start": "easystatic start docs"
   }
 }
