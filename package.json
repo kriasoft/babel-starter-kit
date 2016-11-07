@@ -29,7 +29,9 @@
   },
   "dependencies": {
     "babel-cli": "^6.18.0",
-    "babel-runtime": "^6.11.6"
+    "babel-runtime": "^6.11.6",
+    "cors": "^2.8.1",
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
