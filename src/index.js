@@ -1,10 +1,14 @@
-/**
- * Babel Starter Kit (https://www.kriasoft.com/babel-starter-kit)
- *
- * Copyright © 2015-2016 Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
+import express from 'express';
+import cors from 'cors';
 
-export Greeting from './Greeting.js';
+const app = express();
+app.use(cors());
+app.get('/', (req, res) => {
+  res.json({
+    hello: 'JS World',
+  });
+});
+
+app.listen(3000, () => {
+  console.log('Your app listening on port 3000!');
+});

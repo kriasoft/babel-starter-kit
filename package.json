@@ -28,7 +28,10 @@
     "extends": "airbnb-base"
   },
   "dependencies": {
-    "babel-runtime": "^6.11.6"
+    "babel-cli": "^6.18.0",
+    "babel-runtime": "^6.11.6",
+    "cors": "^2.8.1",
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
@@ -48,6 +51,7 @@
     "mocha": "^3.1.2",
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
+    "nodemon": "^1.11.0",
     "sinon": "^2.0.0-pre.3"
   },
   "scripts": {
@@ -59,6 +63,7 @@
     "build": "node tools/build",
     "prepublish": "npm run build",
     "publish:docs": "easystatic deploy docs --repo kriasoft/babel-starter-kit",
+    "dev": "nodemon --exec babel-node -- src/index.js",
     "start": "easystatic start docs"
   }
 }
