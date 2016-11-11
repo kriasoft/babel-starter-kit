@@ -21,7 +21,7 @@ let promise = Promise.resolve();
 promise = promise.then(() => del(['dist/*']));
 
 // Compile source code into a distributable format with Babel
-for (const format of ['es6', 'cjs', 'umd']) {
+['es', 'cjs', 'umd'].forEach((format) => {
   promise = promise.then(() => rollup.rollup({
     entry: 'src/index.js',
     external: Object.keys(pkg.dependencies),
@@ -37,7 +37,7 @@ for (const format of ['es6', 'cjs', 'umd']) {
     sourceMap: true,
     moduleName: format === 'umd' ? pkg.name : undefined,
   })));
-}
+});
 
 // Copy package.json and LICENSE.txt
 promise = promise.then(() => {
