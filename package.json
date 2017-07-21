@@ -46,7 +46,7 @@
     "eslint-plugin-import": "^2.2.0",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.1.2",
-    "rollup": "^0.41.0",
+    "rollup": "^0.41.1",
     "rollup-plugin-babel": "^2.6.1",
     "sinon": "^2.0.0-pre.3"
   },
