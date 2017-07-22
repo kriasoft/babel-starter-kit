@@ -7,6 +7,12 @@
         "peerDependencies": false
       }
     ],
+    "comma-dangle": ["error", "never"],
+    "prettier/prettier": ["error", {
+      // https://github.com/prettier/prettier#options
+      "singleQuote": true,
+      "trailingComma": "none"
+    }],
     "strict": "off"
   }
 }

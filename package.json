@@ -23,10 +23,6 @@
       "transform-runtime"
     ]
   },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": "airbnb-base"
-  },
   "dependencies": {
     "babel-runtime": "^6.11.6"
   },
@@ -40,13 +36,17 @@
     "babel-register": "^6.16.3",
     "chai": "^4.0.0-canary.1",
     "coveralls": "^2.11.14",
-    "del": "^2.2.2",
-    "eslint": "^3.8.0",
-    "eslint-config-airbnb-base": "^10.0.1",
+    "del": "^3.0.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-prettier": "^2.1.2",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.1.2",
-    "rollup": "^0.36.3",
+    "prettier": "^1.5.3",
+    "rollup": "^0.45.2",
     "rollup-plugin-babel": "^2.6.1",
     "sinon": "^2.0.0-pre.3"
   },
