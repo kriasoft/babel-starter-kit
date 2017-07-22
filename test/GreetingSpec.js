@@ -11,9 +11,7 @@ import { expect } from 'chai';
 import Greeting from '../src/Greeting';
 
 describe('Greeting', () => {
-
   describe('greeting.hello()', () => {
-
     it('should return welcome message for a guest user', () => {
       const greeting = new Greeting();
       const message = greeting.hello();
@@ -25,7 +23,5 @@ describe('Greeting', () => {
       const message = greeting.hello();
       expect(message).to.be.equal('Welcome, John!');
     });
-
   });
-
 });
