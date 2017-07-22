@@ -16,6 +16,7 @@
   "jsnext:main": "index.es.js",
   "babel": {
     "presets": [
+      "flow",
       "latest",
       "stage-0"
     ],
@@ -31,6 +32,7 @@
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.0.0",
     "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.16.3",
@@ -43,6 +45,7 @@
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-prettier": "^2.1.2",
+    "flow-bin": "^0.51.0",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.1.2",
     "prettier": "^1.5.3",
