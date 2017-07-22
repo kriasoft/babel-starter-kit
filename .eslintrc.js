@@ -8,7 +8,7 @@ module.exports = {
     'prettier/flowtype',
   ],
 
-  plugins: ['flowtype', 'prettier'],
+  plugins: ['flowtype', 'prettier', 'jest'],
 
   globals: {
     __DEV__: true,
@@ -16,6 +16,7 @@ module.exports = {
 
   env: {
     browser: true,
+    'jest/globals': true,
   },
 
   rules: {
