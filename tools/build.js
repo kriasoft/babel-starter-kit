@@ -37,20 +37,20 @@ promise = promise.then(() => del(['dist/*']));
                 x =>
                   x === 'latest'
                     ? ['latest', { es2015: { modules: false } }]
-                    : x,
-              ),
-            }),
-          ),
-        ],
+                    : x
+              )
+            })
+          )
+        ]
       })
       .then(bundle =>
         bundle.write({
           dest: `dist/${format === 'cjs' ? 'index' : `index.${format}`}.js`,
           format,
           sourceMap: true,
-          moduleName: format === 'umd' ? pkg.name : undefined,
-        }),
-      ),
+          moduleName: format === 'umd' ? pkg.name : undefined
+        })
+      )
   );
 });
 
@@ -64,12 +64,12 @@ promise = promise.then(() => {
   fs.writeFileSync(
     'dist/package.json',
     JSON.stringify(pkg, null, '  '),
-    'utf-8',
+    'utf-8'
   );
   fs.writeFileSync(
     'dist/LICENSE.txt',
     fs.readFileSync('LICENSE.txt', 'utf-8'),
-    'utf-8',
+    'utf-8'
   );
 });
 
