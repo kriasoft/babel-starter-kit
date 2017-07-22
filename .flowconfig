@@ -1,0 +1,13 @@
+[ignore]
+<PROJECT_ROOT>/dist/.*
+<PROJECT_ROOT>/docs/.*
+<PROJECT_ROOT>/tools/.*
+
+[include]
+
+[libs]
+
+[options]
+esproposal.export_star_as=enable
+
+[lints]
