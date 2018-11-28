@@ -7,4 +7,6 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-export Greeting from './Greeting.js';
+import Greeting from './Greeting';
+
+export default Greeting;
